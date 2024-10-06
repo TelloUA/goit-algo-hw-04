@@ -57,14 +57,6 @@ for _ in range(array_len):
 def wrapper(sorting_type):
     sorting_type(test_array.copy())
 
-# По підрахункам відносна кількість операцій
-# n=50000
-# Timsort(sorted), best = O(n) = 50_000
-# merge_sort = Timsort(sorted) = O(n * log n) = 780_000
-# insertion_sort = O(n^2) = 2_500_000_000
-# timsort може бути швидше за merged в 1-15 разів, merged швидша за insertion приблизно в 3200 разів
-# merged швидша за insertion (фактично виходить в 400 разів)
-
 algos = {
     'core': sorted,
     'merge': merge_sort,
